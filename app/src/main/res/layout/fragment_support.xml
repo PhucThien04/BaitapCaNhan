@@ -3,15 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".FragmentSupport">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="30dp"
-        android:text="SUPPORT PAGE"
-        android:textAlignment="center"
-        android:textColor="#FF0000"/>
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Support Heading -->
+        <TextView
+            android:id="@+id/supportTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support Center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:layout_gravity="center" />
+
+        <!-- Contact Support Button -->
+        <Button
+            android:id="@+id/contactSupportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Support"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
 
 </FrameLayout>

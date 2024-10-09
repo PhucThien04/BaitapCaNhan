@@ -3,41 +3,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".FragmentProfile">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:gravity="center">
 
+        <!-- Avatar Image -->
         <ImageView
             android:id="@+id/avatarImageView"
-            android:layout_width="207dp"
-            android:layout_height="231dp"
+            android:layout_width="200dp"
+            android:layout_height="230dp"
             android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:padding="4dp"
             android:src="@drawable/avt" />
 
-        <!-- User Bio -->
-        <TextView
-            android:id="@+id/userNameTextView"
-            android:layout_width="wrap_content"
+        <!-- Profile Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingTop="16dp"
-            android:text="Nguyễn Phúc Thiên"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:paddingTop="16dp">
 
-        <TextView
-            android:id="@+id/userIDTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="22115053122343"
-            android:textSize="24sp"
-            android:paddingTop="8dp"
-            android:gravity="center" />
+            <!-- Full name -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_person_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="Nguyễn Phúc Thiên"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- Birthdate -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_cake_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="26/04/2004"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_local_phone_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="034 511 3075"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_email_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="22115053122343@sv.ute.udn.vn"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 

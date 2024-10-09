@@ -18,8 +18,6 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
                 return new TabOne();
             case 1:
                 return new TabTwo();
-            case 2:
-                return new TabThree();
             default:
                 return new TabOne();
         }
