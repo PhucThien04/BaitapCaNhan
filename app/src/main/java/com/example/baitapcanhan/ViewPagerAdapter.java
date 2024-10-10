@@ -19,12 +19,12 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             case 1:
                 return new TabTwo();
             default:
-                return new TabOne();
+                return new FragmentHome();
         }
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return 2;
     }
 }
